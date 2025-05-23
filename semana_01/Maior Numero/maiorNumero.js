@@ -9,7 +9,8 @@ function descobrirQualMaiorNumero() {
 
   // A primeira comparação verificar se todos os números são iguais.
   // Ao retornar .T. ele exibe o alerta.
-  if (num1 === num2 && num2 === num3) {
+  // Correção do Chat: comparar o num1 com o num3 também.
+  if (num1 === num2 && num1 === num3 && num2 === num3) {
     alert("Todos os números são iguais.");
     // Faz a verificação para ver qual número é o maior entre eles.
   } else if (num1 >= num2 && num1 >= num3) {
